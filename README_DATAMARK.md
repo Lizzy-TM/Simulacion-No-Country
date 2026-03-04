@@ -25,8 +25,11 @@ Muchos pequeños negocios:
 DATAMARK busca:
 
 ✔ Centralizar datos
+
 ✔ Automatizar limpieza y transformación
+
 ✔ Visualizar KPIs en dashboards
+
 ✔ Reducir errores operativos
 
 ------------------------------------------------------------------------
@@ -70,18 +73,18 @@ optimizado para análisis OLAP.
 
 ### Tablas Dimensión:
 
--   dim_cliente\
--   dim_producto\
--   dim_fecha\
+-   dim_cliente
+-   dim_producto
+-   dim_fecha
 -   dim_medio_pago
 
 Este modelo permite:
 
 ✔ Análisis por cliente
 
-✔ Análisis por producto\
+✔ Análisis por producto
 
-✔ Análisis temporal\
+✔ Análisis temporal
 
 ✔ Análisis por medio de pago
 
@@ -118,19 +121,19 @@ Este modelo permite:
 
 ### Backend / ETL
 
--   Python\
--   Pandas\
--   SQLAlchemy\
+-   Python
+-   Pandas
+-   SQLAlchemy
 -   PostgreSQL
 
 ### Base de Datos
 
--   PostgreSQL\
+-   PostgreSQL
 -   DBeaver
 
 ### Control de Versiones
 
--   Git\
+-   Git
 -   GitHub
 
 ### Automatización
@@ -153,8 +156,8 @@ El proceso ETL actual realiza:
 
 ### 3️⃣ Transform (STAGING)
 
--   Limpieza de valores nulos\
--   Corrección de tipos de datos\
+-   Limpieza de valores nulos
+-   Corrección de tipos de datos
 -   Validación de registros inconsistentes
 
 ### 4️⃣ Load Final (WAREHOUSE)
@@ -236,7 +239,16 @@ Se recomienda usar un archivo `.env`:
 
 ------------------------------------------------------------------------
 
-# 👩‍💻 Autora
+# 👩‍💻 Autores
 
-Proyecto desarrollado como parte de un desafío técnico enfocado en
-automatización y análisis de datos para pequeñas empresas.
+El proyecto, ha sido desarrollado como parte de un desafío técnico enfocado en
+automatización y análisis de datos para pequeñas empresas, por:
+
+-   Dabalos Carla
+-   Estrada Leomar
+-   Paye Cahui Oscar Ferando
+-   Tantarico Minchola Galia Lizbeth
+
+
+
+
