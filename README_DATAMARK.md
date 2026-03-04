@@ -214,6 +214,7 @@ Se recomienda usar un archivo `.env`:
     DB_NAME=
     DB_USER=
     DB_PASSWORD=
+    GEMINI_API_KEY=
 
 ------------------------------------------------------------------------
 
