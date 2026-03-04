@@ -89,7 +89,7 @@ Este modelo permite:
 
 # 🗂 Estructura del Proyecto
 
-    Dashboard-Ventas/
+    Data_Analyst/
     │
     ├── etl.py
     ├── requirements.txt
