@@ -165,12 +165,12 @@ El proceso ETL actual realiza:
 
 # 📊 Estado Actual del Proyecto
 
-✔ Conexión exitosa a PostgreSQL\
-✔ Creación de schemas: raw, staging, warehouse\
-✔ Inserción de datos desde CSV\
-✔ Script ETL funcional\
-✔ Visualización en DBeaver\
-✔ Repositorio conectado a GitHub\
+✔ Conexión exitosa a PostgreSQL
+✔ Creación de schemas: raw, staging, warehouse
+✔ Inserción de datos desde CSV
+✔ Script ETL funcional
+✔ Visualización en DBeaver
+✔ Repositorio conectado a GitHub
 ✔ Pipeline básico de integración continua
 
 ------------------------------------------------------------------------
