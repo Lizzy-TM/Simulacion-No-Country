@@ -16,17 +16,17 @@ decisiones.
 
 Muchos pequeños negocios:
 
--   Gestionan ventas en Excel
--   No controlan correctamente inventarios
--   No tienen métricas claras
--   Cometen errores manuales
+-   Gestionan ventas en Excel\
+-   No controlan correctamente inventarios\
+-   No tienen métricas claras\
+-   Cometen errores manuales\
 -   Toman decisiones sin datos estructurados
 
 DATAMARK busca:
 
-✔ Centralizar datos
-✔ Automatizar limpieza y transformación
-✔ Visualizar KPIs en dashboards
+✔ Centralizar datos\
+✔ Automatizar limpieza y transformación\
+✔ Visualizar KPIs en dashboards\
 ✔ Reducir errores operativos
 
 ------------------------------------------------------------------------
@@ -78,11 +78,8 @@ optimizado para análisis OLAP.
 Este modelo permite:
 
 ✔ Análisis por cliente\
-
 ✔ Análisis por producto\
-
 ✔ Análisis temporal\
-
 ✔ Análisis por medio de pago
 
 ------------------------------------------------------------------------
@@ -145,7 +142,7 @@ El proceso ETL actual realiza:
 
 ### 1️⃣ Extract
 
--   Lectura de archivos CSV creados por el usuario.
+-   Lectura de archivos de la tabla SQL.
 
 ### 2️⃣ Load (RAW)
 
