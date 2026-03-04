@@ -78,8 +78,11 @@ optimizado para análisis OLAP.
 Este modelo permite:
 
 ✔ Análisis por cliente\
+
 ✔ Análisis por producto\
+
 ✔ Análisis temporal\
+
 ✔ Análisis por medio de pago
 
 ------------------------------------------------------------------------
