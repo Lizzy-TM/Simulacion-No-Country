@@ -146,22 +146,23 @@ Este modelo permite:
 
 El proceso ETL actual realiza:
 
-### 1️⃣ Extract
+### 1️⃣ Extract (RAW)
 
--   Lectura de tablas SQL creados por el usuario.
+-   Lectura de la capa Raw de la base de datos (Desde la aplicación el usuario inserta los datos en la capa Raw)
 
-### 2️⃣ Load (RAW)
-
--   Inserción directa al schema `raw`.
-
-### 3️⃣ Transform (STAGING)
+### 2️⃣ Transform
 
 -   Limpieza de valores nulos
 -   Corrección de tipos de datos
 -   Validación de registros inconsistentes
 
+### 3️⃣  Load (STAGING)
+
+-   Inserción directa al schema `staging`
+
 ### 4️⃣ Load Final (WAREHOUSE)
 
+-   Lectura de la capa staging, organización y carga de los datos en el modelo dimensional de la capa warehouse
 -   Inserción en tablas optimizadas para análisis.
 
 ------------------------------------------------------------------------
