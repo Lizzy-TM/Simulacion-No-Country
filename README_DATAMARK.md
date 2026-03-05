@@ -217,12 +217,12 @@ streamlit run main.py
 
 Se recomienda usar un archivo `.env`:
 
-    DB_HOST= "Coloca aqui el host"
-    DB_PORT=
-    DB_NAME=
-    DB_USER=
-    DB_PASSWORD=
-    GEMINI_API_KEY=
+    DB_HOST= "Colocar aqui el host"
+    DB_PORT= "Colocar aqui el puerto"
+    DB_NAME= "Colocar aqui el nombre de la base de datos"
+    DB_USER= "Colocar aqui el usuario"
+    DB_PASSWORD= "Colocar aqui la contraseña"
+    GEMINI_API_KEY= "Colocar aqui la API"
 
 ------------------------------------------------------------------------
 
