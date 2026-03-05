@@ -92,7 +92,7 @@ Este modelo permite:
 
 # 🗂 Estructura del Proyecto
 
-    Dashboard-Ventas/
+    Data_Analyst/
     │
     ├── etl.py
     ├── requirements.txt
@@ -136,9 +136,9 @@ Este modelo permite:
 -   Git
 -   GitHub
 
-### Automatización
+### Automatización de flujo de datos
 
--   GitHub Actions (CI/CD)
+-   Archivo orchetrator.py donde defines un flujo de trabajo compuesto por tareas encadenadas.
 
 ------------------------------------------------------------------------
 
@@ -189,8 +189,7 @@ El proceso ETL actual realiza:
 ## 1️⃣ Clonar repositorio
 
 ``` bash
-git clone https://github.com/TU-USUARIO/TU-REPO.git
-cd Dashboard-Ventas
+git clone https://github.com/No-Country-simulation/-S02-26-Equipo-53-Data-Science.git
 ```
 
 ## 2️⃣ Crear entorno virtual
@@ -209,7 +208,7 @@ pip install -r requirements.txt
 ## 4️⃣ Ejecutar ETL
 
 ``` bash
-python etl.py
+streamlit run main.py
 ```
 
 ------------------------------------------------------------------------
@@ -223,6 +222,7 @@ Se recomienda usar un archivo `.env`:
     DB_NAME=
     DB_USER=
     DB_PASSWORD=
+    GEMINI_API_KEY=
 
 ------------------------------------------------------------------------
 
