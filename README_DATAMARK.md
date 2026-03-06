@@ -1,4 +1,4 @@
-# 📊 DATAMARK - Plataforma de Automatización de Ventas e Inventarios.
+# 📊 DATAMARK - Plataforma de Automatización de Ventas e Inventarios
 
 ## 🚀 Descripción del Proyecto
 
