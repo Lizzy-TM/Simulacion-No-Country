@@ -94,14 +94,14 @@ Este modelo permite:
 
     Proyecto/
     │
-    ├── imagen/                           # Carpeta auto-gestionada para screenshots y recursos de UI
-    │   ├── Portada-Plataforma.png        # Banner principal del proyecto
-    │   └── placeholder_*.png             # Capturas generadas dinámicamente
-    │
+    ├── data/                          
+    │   ├── dummy/      
+    │     │
     ├── libs/                             # 🧱 Core Técnico (Compartido)
     │   ├── db_connection.py              # Singleton de conexión a Aiven PostgreSQL
     │   ├── logger.py                     # Sistema de trazas (logInfo, logError) unificado
-    │   └── models.py                     # Centralización de consultas/modelos base
+    │   ├── models.py                     # Centralización de consultas/modelos base
+    │   └── styles/
     │
     ├── modules/                          # 🧠 Cerebro del Proyecto (Micro-Arquitecturas)
     │   ├── dashboard/                    # Motor de Business Intelligence
@@ -130,14 +130,23 @@ Este modelo permite:
     │   └── dashboard.py                  # Enruta a modules/dashboard
     │
     ├── scripts/                          # 🛠️ Herramientas de Línea de Comandos (DevOps)
-    │   ├── capture_screenshots.py        # Bot de Playwright para tomar fotos automáticas a producción
-    │   ├── clear_aiven_db.py             # Peligro: Trunca la base de datos en Aiven
-    │   ├── temp_old_db.py                # Mocker: Rellena la BD con datos aleatorios para testing
-    │   └── export_data.py                # Volcados de seguridad
+    │   ├── etl/
+    │   ├── check_permissions.py        
+    │   ├── cleanup_libs.py             
+    │   ├── ingest_excel_data.py 
+    │   ├── inspect_db.py      
+    │   ├── list_tables.py             
+    │   ├── orchestrador.py
+    │   ├── populate_mock_db.py    
+    │   └── test_structure.py
     │
+    ├── test_data/                          
+    │   └── ventas_muestra.csv       
     ├── .env.example                      # Plantilla de secretos requeridos (Aiven / Gemini API)
-    ├── requirements.txt                  # Strict list de dependencias Python (psycopg2, streamlit, etc)
+    ├── .gitignore                 
     ├── main.py                           # Entrypoint de Streamlit corriendo el Landing Page
+    ├── requirements.txt                  # Strict list de dependencias Python (psycopg2, streamlit, etc)
+    ├── main.py                           # Entrypoint de Streamlit corriendo el Landing Page    
     └── README.md                         # Este manifiesto global
        
   
