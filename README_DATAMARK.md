@@ -92,30 +92,55 @@ Este modelo permite:
 
 # 🗂 Estructura del Proyecto
 
-    Data_Analyst/
+    Proyecto/
     │
-    ├── etl.py
-    ├── requirements.txt
-    ├── data/
-    │   └── ventas.csv
+    ├── imagen/                           # Carpeta auto-gestionada para screenshots y recursos de UI
+    │   ├── Portada-Plataforma.png        # Banner principal del proyecto
+    │   └── placeholder_*.png             # Capturas generadas dinámicamente
     │
-    ├── sql/
-    │   ├── create_schemas.sql
-    │   ├── raw_tables.sql
-    │   ├── staging_tables.sql
-    │   └── warehouse_tables.sql
+    ├── libs/                             # 🧱 Core Técnico (Compartido)
+    │   ├── db_connection.py              # Singleton de conexión a Aiven PostgreSQL
+    │   ├── logger.py                     # Sistema de trazas (logInfo, logError) unificado
+    │   └── models.py                     # Centralización de consultas/modelos base
     │
-    ├── images/
-    │   ├── flujo.png
-    │   └── modelado_Olap.png
+    ├── modules/                          # 🧠 Cerebro del Proyecto (Micro-Arquitecturas)
+    │   ├── dashboard/                    # Motor de Business Intelligence
+    │   │   ├── _init_.py                 
+    │   │   └── dashboard_logic.py        # Procesamiento Pandas para gráficos y KPIs en vivo
+    │   │
+    │   ├── gestion_dueño/                # Panel Administrativo
+    │   │   ├── components/               # UI de tablas y métricas owner-level
+    │   │   └── services/                 # Gestores de eliminación u operaciones destructivas
+    │   │
+    │   └── ingesta_ventas/               # 🎙️ Core Transaccional e IA
+    │       ├── app.py                    # Orquestador del módulo
+    │       ├── components/               # Interfaces Modulares
+    │       │   ├── voice_input.py        # Grabadora web y procesamiento NLP
+    │       │   ├── mass_upload.py        # Lector de Excel y formateador tabular
+    │       │   ├── manual_input.py       # Formularios Streamlit tradicionales
+    │       │   └── database_viewer.py    # El "CRUD Web" interactivo (st.data_editor)
+    │       └── services/                 # Conexiones con el Mundo Exterior
+    │           ├── db_service.py         # Consultas de ambigüedad, match exacto/fuzzy y triggers
+    │           ├── extraction_service.py # Comunicación con API Gemini 2.5 Flash
+    │           └── state_manager.py      # Gestor transversal de st.session_state
     │
-    ├── .github/
-    │   └── workflows/
-    │       └── ci.yml
+    ├── pages/                            # 🌐 Front-Door (Ruteo de Streamlit)
+    │   ├── 01_Ingesta_Ventas.py          # Enruta a modules/ingesta_ventas/app.py
+    │   ├── 02_Gestion_Dueño.py           # Enruta a modules/gestion_dueño
+    │   └── dashboard.py                  # Enruta a modules/dashboard
     │
-    └── README.md
-
-------------------------------------------------------------------------
+    ├── scripts/                          # 🛠️ Herramientas de Línea de Comandos (DevOps)
+    │   ├── capture_screenshots.py        # Bot de Playwright para tomar fotos automáticas a producción
+    │   ├── clear_aiven_db.py             # Peligro: Trunca la base de datos en Aiven
+    │   ├── temp_old_db.py                # Mocker: Rellena la BD con datos aleatorios para testing
+    │   └── export_data.py                # Volcados de seguridad
+    │
+    ├── .env.example                      # Plantilla de secretos requeridos (Aiven / Gemini API)
+    ├── requirements.txt                  # Strict list de dependencias Python (psycopg2, streamlit, etc)
+    ├── main.py                           # Entrypoint de Streamlit corriendo el Landing Page
+    └── README.md                         # Este manifiesto global
+       
+  
 
 # 🛠 Tecnologías Utilizadas
 
